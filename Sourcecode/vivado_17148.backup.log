@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 28 15:38:27 2020
+# Process ID: 17148
+# Current directory: C:/Users/19801/Desktop/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5092 C:\Users\19801\Desktop\Camera_Demo\Camera_Demo.xpr
+# Log file: C:/Users/19801/Desktop/Camera_Demo/vivado.log
+# Journal file: C:/Users/19801/Desktop/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ThinkPad/Desktop/FPGA_Demo_Project/Camera_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] impl_1 strategy "Vivado Implementation Defaults," step write_bitstream, attribute : Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19801/Desktop/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'RAM_Line' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'RAM_Line' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'AXIS_Data_RAM' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'AXIS_Data_RAM' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_1' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_1' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Runs 36-536] Adding Tcl hook script file E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl to utils_1 fileset.
+INFO: [Runs 36-535] Tcl hook script file E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl does not exist.
+INFO: [Project 1-230] Project 'Camera_Demo.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 734.914 ; gain = 125.570
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {AXIS_Data_RAM RAM_Line clk_wiz_0 clk_wiz_1}] -log ip_upgrade.log
+Upgrading 'AXIS_Data_RAM'
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [IP_Flow 19-3422] Upgraded AXIS_Data_RAM (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'AXIS_Data_RAM'...
+Upgrading 'RAM_Line'
+INFO: [IP_Flow 19-3422] Upgraded RAM_Line (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_Line'...
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'clk_wiz_1'
+INFO: [Project 1-386] Moving file 'C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' from fileset 'clk_wiz_1' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT2_REQUESTED_OUT_FREQ' from '100.000' to '400.000' has been ignored for IP 'clk_wiz_1'
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_1 (Clocking Wizard 6.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'clk_wiz_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/19801/Desktop/Camera_Demo/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/19801/Desktop/Camera_Demo/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 927.789 ; gain = 170.742
+export_ip_user_files -of_objects [get_ips {AXIS_Data_RAM RAM_Line clk_wiz_0 clk_wiz_1}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files  {C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'AXIS_Data_RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'AXIS_Data_RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'AXIS_Data_RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'...
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 948.707 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all AXIS_Data_RAM] }
+catch { config_ip_cache -export [get_ips -all RAM_Line] }
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+catch { config_ip_cache -export [get_ips -all clk_wiz_1] }
+export_ip_user_files -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci]
+launch_runs -jobs 8 {AXIS_Data_RAM_synth_1 RAM_Line_synth_1 clk_wiz_0_synth_1 clk_wiz_1_synth_1}
+[Tue Jul 28 15:41:03 2020] Launched AXIS_Data_RAM_synth_1, RAM_Line_synth_1, clk_wiz_0_synth_1, clk_wiz_1_synth_1...
+Run output will be captured here:
+AXIS_Data_RAM_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+RAM_Line_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/RAM_Line_synth_1/runme.log
+clk_wiz_0_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/clk_wiz_0_synth_1/runme.log
+clk_wiz_1_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/clk_wiz_1_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci] -directory C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files -ipstatic_source_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/modelsim} {questa=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/questa} {riviera=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/riviera} {activehdl=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci] -directory C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files -ipstatic_source_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/modelsim} {questa=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/questa} {riviera=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/riviera} {activehdl=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files -ipstatic_source_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/modelsim} {questa=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/questa} {riviera=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/riviera} {activehdl=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files -ipstatic_source_dir C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/modelsim} {questa=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/questa} {riviera=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/riviera} {activehdl=C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi_to_axis_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi2_d_phy_rx_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+[Tue Jul 28 15:44:43 2020] Launched csi_to_axis_0_synth_1, csi2_d_phy_rx_0_synth_1, rgb2dvi_0_synth_1...
+Run output will be captured here:
+csi_to_axis_0_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/csi_to_axis_0_synth_1/runme.log
+csi2_d_phy_rx_0_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/csi2_d_phy_rx_0_synth_1/runme.log
+rgb2dvi_0_synth_1: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/rgb2dvi_0_synth_1/runme.log
+[Tue Jul 28 15:44:43 2020] Launched synth_1...
+Run output will be captured here: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+CRITICAL WARNING: [Project 1-976] Hook script file C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl used in Write Bitstream does not exist.
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+CRITICAL WARNING: [Project 1-976] Hook script file C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl used in Write Bitstream does not exist.
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+CRITICAL WARNING: [Project 1-976] Hook script file C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl used in Write Bitstream does not exist.
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE {} [get_runs impl_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jul 28 16:03:32 2020] Launched synth_1...
+Run output will be captured here: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Tue Jul 28 16:04:34 2020] Launched impl_1...
+Run output will be captured here: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jul 28 16:06:43 2020] Launched impl_1...
+Run output will be captured here: C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/19801/Desktop/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 28 16:30:19 2020...

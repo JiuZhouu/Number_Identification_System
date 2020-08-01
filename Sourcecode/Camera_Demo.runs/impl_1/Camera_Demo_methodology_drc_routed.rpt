@@ -1,0 +1,474 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 15:56:54 2020
+| Host         : DESKTOP-A0D9PK7 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Camera_Demo_methodology_drc_routed.rpt -pb Camera_Demo_methodology_drc_routed.pb -rpx Camera_Demo_methodology_drc_routed.rpx
+| Design       : Camera_Demo
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 85
++-----------+----------+-----------------------------------------------------------+------------+
+| Rule      | Severity | Description                                               | Violations |
++-----------+----------+-----------------------------------------------------------+------------+
+| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 15         |
+| SYNTH-9   | Warning  | Small multiplier                                          | 6          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree        | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks            | 8          |
+| TIMING-7  | Warning  | No common node between related clocks                     | 4          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                         | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                          | 1          |
+| TIMING-14 | Warning  | LUT on the clock tree                                     | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell                               | 22         |
+| TIMING-18 | Warning  | Missing input or output delay                             | 7          |
+| TIMING-20 | Warning  | Non-clocked latch                                         | 15         |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin                 | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects               | 1          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                         | 2          |
++-----------+----------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-5#1 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#2 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_1024_1151_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#3 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_1152_1279_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#4 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#5 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_256_383_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#6 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_384_511_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#7 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_512_639_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#8 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_640_767_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#9 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_768_895_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#10 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_h_myram/mem_reg_896_1023_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#11 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_v_myram/mem_reg_0_127_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#12 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_v_myram/mem_reg_128_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#13 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_v_myram/mem_reg_256_383_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#14 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_v_myram/mem_reg_384_511_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#15 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance u_vip/u_projection/u_v_myram/mem_reg_512_639_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[10]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[10]_i_10 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[12]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[12]_i_6 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[2]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at u_vip/u_rgb2ycbcr/rgb_b_m0_reg[6]_i_1 of size 8x5, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock MIPI_Trans_Driver/camera_clock/inst/clk_in1 is defined downstream of clock pclk and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0 and clk_out1_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0 and clk_out1_clk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_1]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and clk_out1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and clk_out1_clk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks clk_out1_clk_wiz_1]
+Related violations: <none>
+
+TIMING-6#5 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk_out1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#6 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk_out1_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk_out1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#7 Warning
+No common primary clock between related clocks  
+The clocks clk_out2_clk_wiz_0 and clk_out2_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2_clk_wiz_0] -to [get_clocks clk_out2_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-6#8 Warning
+No common primary clock between related clocks  
+The clocks clk_out2_clk_wiz_0_1 and clk_out2_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2_clk_wiz_0_1] -to [get_clocks clk_out2_clk_wiz_0]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_0 and clk_out1_clk_wiz_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_1]
+Related violations: <none>
+
+TIMING-7#2 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_0_1 and clk_out1_clk_wiz_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_0_1] -to [get_clocks clk_out1_clk_wiz_1]
+Related violations: <none>
+
+TIMING-7#3 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk_out1_clk_wiz_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-7#4 Warning
+No common node between related clocks  
+The clocks clk_out1_clk_wiz_1 and clk_out1_clk_wiz_0_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_wiz_1] -to [get_clocks clk_out1_clk_wiz_0_1]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_h_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin u_lcd/u_lcd_driver/cnt_v_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on i_camera_iic_sda relative to clock(s) i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on i_rst relative to clock(s) MIPI_Trans_Driver/camera_clock/inst/clk_in1, i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_n[0] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_n[1] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_p[0] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on i_rx_data_p[1] relative to clock(s) dphy_hs_clock_p
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on o_camera_iic_scl relative to clock(s) i_clk, sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u_vip/u_digital_recognition/col_area_reg[0] cannot be properly analyzed as its control pin u_vip/u_digital_recognition/col_area_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u_vip/u_digital_recognition/col_area_reg[1] cannot be properly analyzed as its control pin u_vip/u_digital_recognition/col_area_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u_vip/u_digital_recognition/col_area_reg[2] cannot be properly analyzed as its control pin u_vip/u_digital_recognition/col_area_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u_vip/u_digital_recognition/row_area_reg[0] cannot be properly analyzed as its control pin u_vip/u_digital_recognition/row_area_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/FSM_onehot_nxt_state_reg[0] cannot be properly analyzed as its control pin u_vip/u_projection/FSM_onehot_nxt_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/FSM_onehot_nxt_state_reg[1] cannot be properly analyzed as its control pin u_vip/u_projection/FSM_onehot_nxt_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/FSM_onehot_nxt_state_reg[2] cannot be properly analyzed as its control pin u_vip/u_projection/FSM_onehot_nxt_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_col_reg[0] cannot be properly analyzed as its control pin u_vip/u_projection/num_col_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_col_reg[1] cannot be properly analyzed as its control pin u_vip/u_projection/num_col_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_col_reg[2] cannot be properly analyzed as its control pin u_vip/u_projection/num_col_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_col_reg[3] cannot be properly analyzed as its control pin u_vip/u_projection/num_col_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_row_reg[0] cannot be properly analyzed as its control pin u_vip/u_projection/num_row_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_row_reg[1] cannot be properly analyzed as its control pin u_vip/u_projection/num_row_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_row_reg[2] cannot be properly analyzed as its control pin u_vip/u_projection/num_row_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u_vip/u_projection/num_row_reg[3] cannot be properly analyzed as its control pin u_vip/u_projection/num_row_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock MIPI_Trans_Driver/camera_clock/inst/clk_in1 is created on an inappropriate internal pin MIPI_Trans_Driver/camera_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+MIPI_Trans_Driver/Data_Read/U0/bits_gen[0].line_if_inst/ISERDESE2_inst: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+MIPI_Trans_Driver/Data_Read/U0/bits_gen[1].line_if_inst/ISERDESE2_inst: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

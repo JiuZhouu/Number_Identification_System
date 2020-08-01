@@ -1,0 +1,1421 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 15:53:10 2020
+# Process ID: 11520
+# Current directory: C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1
+# Command line: vivado.exe -log Camera_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Camera_Demo.tcl
+# Log file: C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/Camera_Demo.vds
+# Journal file: C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Camera_Demo.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/apple/Desktop/test/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 303.516 ; gain = 29.816
+Command: synth_design -top Camera_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13368 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 425.949 ; gain = 105.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Camera_Demo' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:3]
+	Parameter NUM_ROW bound to: 1'b1 
+	Parameter NUM_COL bound to: 3'b011 
+	Parameter H_PIXEL bound to: 1280 - type: integer 
+	Parameter V_PIXEL bound to: 720 - type: integer 
+	Parameter DEPBIT bound to: 4'b1101 
+	Parameter ID_4342 bound to: 0 - type: integer 
+	Parameter ID_7084 bound to: 1 - type: integer 
+	Parameter ID_7016 bound to: 2 - type: integer 
+	Parameter ID_1018 bound to: 5 - type: integer 
+	Parameter ID_LCD bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'lcd' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/lcd.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' (2#1) [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:28]
+WARNING: [Synth 8-6104] Input port 'ID_lcd' has an internal driver [C:/Users/apple/Desktop/numberrecognition_changes/lcd/lcd.v:40]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/clk_div.v:28]
+	Parameter ID_4342 bound to: 0 - type: integer 
+	Parameter ID_7084 bound to: 1 - type: integer 
+	Parameter ID_7016 bound to: 2 - type: integer 
+	Parameter ID_1018 bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (3#1) [C:/Users/apple/Desktop/numberrecognition_changes/lcd/clk_div.v:28]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/lcd_driver.v:28]
+	Parameter H_SYNC_4342 bound to: 11'b00000101001 
+	Parameter H_BACK_4342 bound to: 11'b00000000010 
+	Parameter H_DISP_4342 bound to: 11'b00111100000 
+	Parameter H_FRONT_4342 bound to: 11'b00000000010 
+	Parameter H_TOTAL_4342 bound to: 11'b01000001101 
+	Parameter V_SYNC_4342 bound to: 11'b00000001010 
+	Parameter V_BACK_4342 bound to: 11'b00000000010 
+	Parameter V_DISP_4342 bound to: 11'b00100010000 
+	Parameter V_FRONT_4342 bound to: 11'b00000000010 
+	Parameter V_TOTAL_4342 bound to: 11'b00100011110 
+	Parameter H_SYNC_7084 bound to: 11'b00010000000 
+	Parameter H_BACK_7084 bound to: 11'b00001011000 
+	Parameter H_DISP_7084 bound to: 11'b01100100000 
+	Parameter H_FRONT_7084 bound to: 11'b00000101000 
+	Parameter H_TOTAL_7084 bound to: 11'b10000100000 
+	Parameter V_SYNC_7084 bound to: 11'b00000000010 
+	Parameter V_BACK_7084 bound to: 11'b00000100001 
+	Parameter V_DISP_7084 bound to: 11'b00111100000 
+	Parameter V_FRONT_7084 bound to: 11'b00000001010 
+	Parameter V_TOTAL_7084 bound to: 11'b01000001101 
+	Parameter H_SYNC_7016 bound to: 11'b00000010100 
+	Parameter H_BACK_7016 bound to: 11'b00010001100 
+	Parameter H_DISP_7016 bound to: 11'b10000000000 
+	Parameter H_FRONT_7016 bound to: 11'b00010100000 
+	Parameter H_TOTAL_7016 bound to: 11'b10101000000 
+	Parameter V_SYNC_7016 bound to: 11'b00000000011 
+	Parameter V_BACK_7016 bound to: 11'b00000010100 
+	Parameter V_DISP_7016 bound to: 11'b01001011000 
+	Parameter V_FRONT_7016 bound to: 11'b00000001100 
+	Parameter V_TOTAL_7016 bound to: 11'b01001111011 
+	Parameter H_SYNC_1018 bound to: 11'b00000101000 
+	Parameter H_BACK_1018 bound to: 11'b00011011100 
+	Parameter H_DISP_1018 bound to: 11'b10100000000 
+	Parameter H_FRONT_1018 bound to: 11'b00001101110 
+	Parameter H_TOTAL_1018 bound to: 11'b11001110010 
+	Parameter V_SYNC_1018 bound to: 11'b00000000101 
+	Parameter V_BACK_1018 bound to: 11'b00000010100 
+	Parameter V_DISP_1018 bound to: 11'b01011010000 
+	Parameter V_FRONT_1018 bound to: 11'b00000000101 
+	Parameter V_TOTAL_1018 bound to: 11'b01011101110 
+	Parameter ID_4342 bound to: 0 - type: integer 
+	Parameter ID_7084 bound to: 1 - type: integer 
+	Parameter ID_7016 bound to: 2 - type: integer 
+	Parameter ID_1018 bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (4#1) [C:/Users/apple/Desktop/numberrecognition_changes/lcd/lcd_driver.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'lcd' (5#1) [C:/Users/apple/Desktop/numberrecognition_changes/lcd/lcd.v:4]
+INFO: [Synth 8-6157] synthesizing module 'vip' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:4]
+	Parameter NUM_ROW bound to: 1'b1 
+	Parameter NUM_COL bound to: 3'b011 
+	Parameter H_PIXEL bound to: 1280 - type: integer 
+	Parameter V_PIXEL bound to: 720 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr' [C:/Users/apple/Desktop/numberrecognition_changes/vip/rgb2ycbcr.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr' (6#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/rgb2ycbcr.v:2]
+WARNING: [Synth 8-689] width (9) of port connection 'rgb888_r' does not match port width (8) of module 'rgb2ycbcr' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:63]
+INFO: [Synth 8-6157] synthesizing module 'binarization' [C:/Users/apple/Desktop/numberrecognition_changes/vip/binarization.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'binarization' (7#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/binarization.v:4]
+INFO: [Synth 8-6157] synthesizing module 'projection' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:4]
+	Parameter NUM_ROW bound to: 1'b1 
+	Parameter NUM_COL bound to: 3'b011 
+	Parameter H_PIXEL bound to: 1280 - type: integer 
+	Parameter V_PIXEL bound to: 720 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+	Parameter st_init bound to: 2'b00 
+	Parameter st_project bound to: 2'b01 
+	Parameter st_process bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:175]
+INFO: [Synth 8-6157] synthesizing module 'myram' [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 1280 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myram' (8#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+INFO: [Synth 8-6157] synthesizing module 'myram__parameterized0' [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 720 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myram__parameterized0' (8#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+INFO: [Synth 8-6157] synthesizing module 'myram__parameterized1' [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter DEPTH bound to: 6 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myram__parameterized1' (8#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+WARNING: [Synth 8-689] width (13) of port connection 'dq_i' does not match port width (11) of module 'myram__parameterized1' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:303]
+WARNING: [Synth 8-689] width (13) of port connection 'dq_o' does not match port width (11) of module 'myram__parameterized1' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:304]
+INFO: [Synth 8-6157] synthesizing module 'myram__parameterized2' [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DEPBIT bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myram__parameterized2' (8#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/myram.v:4]
+WARNING: [Synth 8-689] width (13) of port connection 'dq_i' does not match port width (11) of module 'myram__parameterized2' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:319]
+WARNING: [Synth 8-689] width (13) of port connection 'dq_o' does not match port width (11) of module 'myram__parameterized2' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:320]
+WARNING: [Synth 8-5788] Register col_border_addr_wr_reg in module projection is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:189]
+WARNING: [Synth 8-5788] Register row_border_addr_wr_reg in module projection is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:190]
+WARNING: [Synth 8-5788] Register col_border_data_wr_reg in module projection is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:232]
+WARNING: [Synth 8-5788] Register row_border_data_wr_reg in module projection is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:245]
+INFO: [Synth 8-6155] done synthesizing module 'projection' (9#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:4]
+INFO: [Synth 8-6157] synthesizing module 'digital_recognition' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:4]
+	Parameter NUM_ROW bound to: 1'b1 
+	Parameter NUM_COL bound to: 3'b011 
+	Parameter H_PIXEL bound to: 1280 - type: integer 
+	Parameter V_PIXEL bound to: 720 - type: integer 
+	Parameter NUM_WIDTH bound to: 11 - type: integer 
+	Parameter FP_1_3 bound to: 6'b010101 
+	Parameter FP_2_3 bound to: 6'b101011 
+	Parameter FP_2_5 bound to: 6'b011010 
+	Parameter FP_3_5 bound to: 6'b100110 
+	Parameter NUM_TOTAL bound to: 3'b010 
+WARNING: [Synth 8-5788] Register cent_y_reg in module digital_recognition is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:180]
+INFO: [Synth 8-6155] done synthesizing module 'digital_recognition' (10#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:4]
+WARNING: [Synth 8-689] width (13) of port connection 'row_border_addr' does not match port width (11) of module 'digital_recognition' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:142]
+WARNING: [Synth 8-689] width (13) of port connection 'row_border_data' does not match port width (11) of module 'digital_recognition' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:143]
+WARNING: [Synth 8-689] width (13) of port connection 'col_border_addr' does not match port width (11) of module 'digital_recognition' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:144]
+WARNING: [Synth 8-689] width (13) of port connection 'col_border_data' does not match port width (11) of module 'digital_recognition' [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'vip' (11#1) [C:/Users/apple/Desktop/numberrecognition_changes/vip/vip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (12#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (13#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (14#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:75]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (15#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter Default_AXIS_TREADY bound to: 1'b1 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (16#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (17#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_IDLE_START bound to: 3'b001 
+	Parameter ST_PATTERN0 bound to: 3'b010 
+	Parameter ST_PATTERN1 bound to: 3'b011 
+	Parameter ST_IDLE_GR bound to: 3'b100 
+	Parameter ST_PATTERN2 bound to: 3'b101 
+	Parameter ST_PATTERN3 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'RAM_Line' [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Line' (18#1) [C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/.Xil/Vivado-11520-DESKTOP-A0D9PK7/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (19#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (20#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (21#1) [D:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+	Parameter SLAVE_ADDRESS bound to: 8'b01101100 
+	Parameter INITIAL_NUM bound to: 8'b01011000 
+	Parameter REG_ADDR2_EN bound to: 1'b1 
+	Parameter WR_HOLD_T bound to: 4'b1010 
+	Parameter WR_VALID bound to: 1'b1 
+	Parameter WAIT_DELAY bound to: 20'b00011000011010100000 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (22#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+	Parameter ST_WAIT bound to: 2'b00 
+	Parameter ST_START bound to: 2'b01 
+	Parameter ST_HOLD bound to: 2'b10 
+	Parameter ST_END bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (23#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+WARNING: [Synth 8-6014] Unused sequential element en_rd_rom_reg was removed.  [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (24#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+	Parameter System_Clk_MHz bound to: 13'b0000001100100 
+	Parameter Set_IIC_SCL_kHz bound to: 13'b0000001100100 
+	Parameter SCL_Divider bound to: 13'b0000000000001 
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter SCL_H_START bound to: 0 - type: integer 
+	Parameter SCL_H_CENTER bound to: 249 - type: integer 
+	Parameter SCL_L_START bound to: 499 - type: integer 
+	Parameter SCL_L_CENTER bound to: 749 - type: integer 
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_W_SADDR bound to: 5'b00010 
+	Parameter ST_ACK_0 bound to: 5'b00011 
+	Parameter ST_W_ADDR_H bound to: 5'b00100 
+	Parameter ST_ACK_1 bound to: 5'b00101 
+	Parameter ST_W_ADDR_L bound to: 5'b00110 
+	Parameter ST_ACK_2 bound to: 5'b00111 
+	Parameter ST_W_DATA bound to: 5'b01000 
+	Parameter ST_ACK_3 bound to: 5'b01001 
+	Parameter ST_START_R bound to: 5'b01010 
+	Parameter ST_W_SADDR_R bound to: 5'b01011 
+	Parameter ST_ACK_4 bound to: 5'b01100 
+	Parameter ST_R_DATA bound to: 5'b01101 
+	Parameter ST_NACK bound to: 5'b01110 
+	Parameter ST_STOP bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:388]
+WARNING: [Synth 8-5788] Register data_r_o_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (25#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+WARNING: [Synth 8-3848] Net led in module/entity Camera_Demo does not have driver. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:19]
+WARNING: [Synth 8-3848] Net iic_read in module/entity Camera_Demo does not have driver. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'Camera_Demo' (26#1) [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:3]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[12]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[10]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[9]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[8]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[7]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[6]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[5]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[4]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[3]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[2]
+WARNING: [Synth 8-3331] design myram__parameterized2 has unconnected port raddr[1]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[12]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[10]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[9]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[8]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[7]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[6]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[5]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[4]
+WARNING: [Synth 8-3331] design myram__parameterized1 has unconnected port raddr[3]
+WARNING: [Synth 8-3331] design myram__parameterized0 has unconnected port raddr[12]
+WARNING: [Synth 8-3331] design myram__parameterized0 has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design myram__parameterized0 has unconnected port raddr[10]
+WARNING: [Synth 8-3331] design myram has unconnected port raddr[12]
+WARNING: [Synth 8-3331] design myram has unconnected port raddr[11]
+WARNING: [Synth 8-3331] design projection has unconnected port frame_hsync
+WARNING: [Synth 8-3331] design vip has unconnected port pre_rgb[23]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[22]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[21]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[20]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[19]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[18]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[17]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[16]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[14]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[13]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[12]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[11]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[10]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[9]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[8]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[6]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[5]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[4]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[3]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[2]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[1]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[0]
+WARNING: [Synth 8-3331] design Camera_Demo has unconnected port led
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 486.109 ; gain = 165.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin MIPI_Camera_IIC:i_iic_read to constant 0 [C:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:193]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 486.109 ; gain = 165.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 486.109 ; gain = 165.922
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_To_Csi'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_Read'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'MIPI_Trans_Driver/Data_Read'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'Mini_HDMI_Driver'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'Mini_HDMI_Driver'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM/AXIS_Data_RAM_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line/RAM_Line_in_context.xdc] for cell 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'MIPI_Trans_Driver/camera_clock'
+Finished Parsing XDC File [c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'MIPI_Trans_Driver/camera_clock'
+Parsing XDC File [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc:46]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc:46]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/err_req_reg/C'. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc:47]
+WARNING: [Vivado 12-508] No pins matched 'MIPI_Trans_Driver/Data_Read/U0/clock_upd_req_reg/D'. [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc:47]
+Finished Parsing XDC File [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Camera_Demo_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/apple/Desktop/test/Camera_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Camera_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Camera_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 798.828 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 798.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 798.828 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 798.828 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS' at clock pin 'clka' is different from the actual clock period '4.761', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 798.828 ; gain = 478.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 798.828 ; gain = 478.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_n. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_rx_data_p. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_n[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_rx_data_p[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk. (constraint file  c:/Users/apple/Desktop/test/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mini_HDMI_Driver. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Csi_To_Dvp0/RAM_AXIS. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/Driver_Bayer_To_RGB0/RAM_Line_Buff2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIPI_Trans_Driver/camera_clock. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 798.828 ; gain = 478.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_33m_0_reg' in module 'clk_div'
+INFO: [Synth 8-802] inferred FSM for state register 'state_33m_1_reg' in module 'clk_div'
+INFO: [Synth 8-5544] ROM "clk_10m" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_33m_0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_33m_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "h_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_disp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_back" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_disp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_total" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'v_we_reg' into 'h_we_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:164]
+INFO: [Synth 8-4471] merging register 'v_di_reg' into 'h_di_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:167]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'projection'
+INFO: [Synth 8-5546] ROM "h_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_raddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_raddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_raddr0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "project_done_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "h_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_border_ram_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "row_area_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "digit_id" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rgb_data_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Trigger_Generator'
+INFO: [Synth 8-5544] ROM "flg_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flg_iic_ok" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_scl_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_write_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_busy_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sda_dir_o" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_33m_1_reg' using encoding 'one-hot' in module 'clk_div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_33m_0_reg' using encoding 'one-hot' in module 'clk_div'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nxt_state_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nxt_state_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:138]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_init |                              001 |                               00
+              st_project |                              010 |                               01
+              st_process |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'projection'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nxt_state_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'num_col_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:87]
+WARNING: [Synth 8-327] inferring latch for variable 'num_row_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/projection.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'row_area_reg[0]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:212]
+WARNING: [Synth 8-327] inferring latch for variable 'col_area_reg[0]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:217]
+WARNING: [Synth 8-327] inferring latch for variable 'col_area_reg[1]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:217]
+WARNING: [Synth 8-327] inferring latch for variable 'col_area_reg[2]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:217]
+WARNING: [Synth 8-327] inferring latch for variable 'real_num_total_reg' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:94]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                               00 |                               00
+                ST_START |                               01 |                               01
+                 ST_HOLD |                               10 |                               10
+                  ST_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_current_reg' using encoding 'sequential' in module 'Trigger_Generator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 798.828 ; gain = 478.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     24 Bit       Adders := 1     
+	   4 Input     24 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 4     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 19    
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 5     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 16    
+	               23 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 20    
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 23    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 60    
++---RAMs : 
+	                6 Bit         RAMs := 1     
+	                3 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 15    
+	   5 Input     11 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 3     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 12    
+	   5 Input      8 Bit        Muxes := 2     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 10    
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 52    
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 17    
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rd_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module lcd_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+	   5 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+Module lcd 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module rgb2ycbcr 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+	   4 Input     24 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 12    
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module binarization 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module myram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+Module myram__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module myram__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+Module myram__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
+Module projection 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 4     
+	               11 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 5     
+	   3 Input     11 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 14    
+Module digital_recognition 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 7     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	                6 Bit         RAMs := 1     
+	                3 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 1     
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               55 Bit    Registers := 1     
+	               50 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module ROM_OV5647 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module Trigger_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module OV5647_Init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Driver_IIC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "u_clk_div/clk_10m" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "h_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_raddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_raddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_raddr0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "project_done_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'row_cnt_reg[3:0]' into 'row_cnt_reg[3:0]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:234]
+INFO: [Synth 8-4471] merging register 'col_cnt_reg[3:0]' into 'col_cnt_reg[3:0]' [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:224]
+INFO: [Synth 8-5544] ROM "row_area_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_area_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "digit_id" is below threshold of ROM address width. It will be mapped to LUTs
+DSP Report: Generating DSP v25_t1, operation Mode is: A*(B:0x1a).
+DSP Report: operator v25_t1 is absorbed into DSP v25_t1.
+DSP Report: Generating DSP v25_t0, operation Mode is: PCIN+A*(B:0x26).
+DSP Report: operator v25_t0 is absorbed into DSP v25_t0.
+DSP Report: operator v25_t1 is absorbed into DSP v25_t0.
+DSP Report: Generating DSP v23_t1, operation Mode is: A*(B:0x2b).
+DSP Report: operator v23_t1 is absorbed into DSP v23_t1.
+DSP Report: Generating DSP v23_t0, operation Mode is: PCIN+A*(B:0x15).
+DSP Report: operator v23_t0 is absorbed into DSP v23_t0.
+DSP Report: operator v23_t1 is absorbed into DSP v23_t0.
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/addrb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_initial" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flg_delay" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design projection has unconnected port frame_hsync
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[12]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[11]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[10]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[9]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[8]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[7]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[6]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[5]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[4]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[3]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[2]
+WARNING: [Synth 8-3331] design projection has unconnected port row_border_addr_rd[1]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[12]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[11]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[10]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[9]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[8]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[7]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[6]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[5]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[4]
+WARNING: [Synth 8-3331] design projection has unconnected port col_border_addr_rd[3]
+WARNING: [Synth 8-3331] design vip has unconnected port pre_rgb[23]
+WARNING: [Synth 8-3331] design Camera_Demo has unconnected port led
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (MIPI_Camera_Driver/\Trigger_Write/buffer_out_level_reg )
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[0]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[1]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[2]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[3]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[0]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[1]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[2]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[3]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[4]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[5]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[6]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[8]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[9]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[6]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[5]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[4]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/v_raddr_reg_rep[7]' (FDCE) to 'u_vip/u_projection/v_raddr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[7]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[8]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[9]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_projection/h_raddr_reg_rep[10]' (FDCE) to 'u_vip/u_projection/h_raddr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[15]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[14]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[13]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[12]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[11]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[10]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[9]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[8]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[6]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[5]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[4]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[3]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[2]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[1]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m2_reg[0]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m2_reg[15]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m1_reg[15]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[15]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_g_m0_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m0_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[14]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[15]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[16]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[17]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[18]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[19]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[20]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[21]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[22]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_r_m1_reg[23]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m1_reg[0]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m1_reg[1]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_vip/u_rgb2ycbcr/rgb_b_m1_reg[2]' (FDC) to 'u_vip/u_rgb2ycbcr/rgb_r_m0_reg[14]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_vip/\u_rgb2ycbcr/rgb_r_m0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_Driver/\OV5647/data_o_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_Driver/\slave_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPI_Camera_IIC/\state_current_reg[4] )
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[15]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[14]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[13]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[12]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[11]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[10]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[9]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[8]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[7]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[6]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[5]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[4]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[3]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[10]) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[9]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[8]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[7]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[6]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[5]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[4]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[3]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[2]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[1]__0) is unused and will be removed from module vip.
+WARNING: [Synth 8-3332] Sequential element (u_projection/v_raddr_reg_rep[0]__0) is unused and will be removed from module vip.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_vip/\u_rgb2ycbcr/rgb_r_m0_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 798.828 ; gain = 478.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM_OV5647  | p_0_out    | 128x24        | LUT            | 
+|OV5647_Init | p_0_out    | 128x24        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+|Module Name | RTL Object                              | Inference | Size (Depth x Width) | Primitives                                  | 
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+|u_vip       | u_projection/u_h_myram/mem_reg          | Implied   | 2 K x 1              | RAM128X1D x 10                              | 
+|u_vip       | u_projection/u_v_myram/mem_reg          | Implied   | 1 K x 1              | RAM16X1D x 1  RAM64X1D x 1  RAM128X1D x 5   | 
+|u_vip       | u_projection/u_col_border_myram/mem_reg | Implied   | 8 x 11               | RAM32M x 2                                  | 
+|u_vip       | u_projection/u_row_border_myram/mem_reg | Implied   | 2 x 11               | RAM32M x 2                                  | 
+|u_vip       | u_digital_recognition/y_flag_reg        | Implied   | 4 x 2                | RAM16X1S x 2                                | 
+|u_vip       | u_digital_recognition/y_reg             | Implied   | 4 x 2                | RAM16X1D x 2                                | 
+|u_vip       | u_digital_recognition/x2_r_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x2_l_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x1_r_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x1_l_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|digital_recognition | A*(B:0x1a)      | 17     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|digital_recognition | PCIN+A*(B:0x26) | 17     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|digital_recognition | A*(B:0x2b)      | 17     | 6      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|digital_recognition | PCIN+A*(B:0x15) | 17     | 5      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:191]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:192]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:191]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:192]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out2' to pin 'clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MIPI_Trans_Driver/camera_clock/clk_in1' to pin 'MIPI_Trans_Driver/Data_Read/bbstub_rxbyteclkhs/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MIPI_Trans_Driver/camera_clock/clk_out1' to pin 'MIPI_Trans_Driver/camera_clock/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'MIPI_Trans_Driver/camera_clock/clk_in1' to 'MIPI_Trans_Driver/Driver_Csi_To_Dvp0/axis_tdata_i_reg[15]/C'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 824.105 ; gain = 503.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 880.234 ; gain = 560.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+|Module Name | RTL Object                              | Inference | Size (Depth x Width) | Primitives                                  | 
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+|u_vip       | u_projection/u_h_myram/mem_reg          | Implied   | 2 K x 1              | RAM128X1D x 10                              | 
+|u_vip       | u_projection/u_v_myram/mem_reg          | Implied   | 1 K x 1              | RAM16X1D x 1  RAM64X1D x 1  RAM128X1D x 5   | 
+|u_vip       | u_projection/u_col_border_myram/mem_reg | Implied   | 8 x 11               | RAM32M x 2                                  | 
+|u_vip       | u_projection/u_row_border_myram/mem_reg | Implied   | 2 x 11               | RAM32M x 2                                  | 
+|u_vip       | u_digital_recognition/y_flag_reg        | Implied   | 4 x 2                | RAM16X1S x 2                                | 
+|u_vip       | u_digital_recognition/y_reg             | Implied   | 4 x 2                | RAM16X1D x 2                                | 
+|u_vip       | u_digital_recognition/x2_r_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x2_l_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x1_r_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
+|u_vip       | u_digital_recognition/x1_l_reg          | Implied   | 4 x 1                | RAM16X1D x 1                                | 
++------------+-----------------------------------------+-----------+----------------------+---------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[2] with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[2]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[2] with 2nd driver pin 'VCC' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net ID_lcd[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[1] with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[1]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[1] with 2nd driver pin 'GND' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net ID_lcd[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[0] with 1st driver pin 'u_lcd/u_rd_id/ID_lcd_reg[0]/Q' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ID_lcd[0] with 2nd driver pin 'VCC' [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net ID_lcd[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/apple/Desktop/numberrecognition_changes/lcd/rd_id.v:46]
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_1_reg[2]) is unused and will be removed from module Camera_Demo.
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_1_reg[1]) is unused and will be removed from module Camera_Demo.
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_1_reg[0]) is unused and will be removed from module Camera_Demo.
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_0_reg[2]) is unused and will be removed from module Camera_Demo.
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_0_reg[1]) is unused and will be removed from module Camera_Demo.
+WARNING: [Synth 8-3332] Sequential element (u_lcd/u_clk_div/FSM_onehot_state_33m_0_reg[0]) is unused and will be removed from module Camera_Demo.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:189]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:190]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:191]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:192]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:191]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/apple/Desktop/numberrecognition_changes/vip/digital_recognition.v:192]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop MIPI_Camera_IIC/sda_dir_o_reg is being inverted and renamed to MIPI_Camera_IIC/sda_dir_o_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Camera_Demo | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/hsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_o_reg        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/flg_pos_vde_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/vsync_i_reg[1]     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/line2_reg[0][7]    | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|Camera_Demo | u_vip/u_binarization/pre_frame_vsync_d_reg                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|Camera_Demo | u_vip/u_binarization/pre_frame_de_d_reg                   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |clk_wiz_0       |         1|
+|2     |rgb2dvi_0       |         1|
+|3     |clk_wiz_1       |         1|
+|4     |csi2_d_phy_rx_0 |         1|
+|5     |csi_to_axis_0   |         1|
+|6     |RAM_Line        |         3|
+|7     |AXIS_Data_RAM   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |AXIS_Data_RAM   |     1|
+|2     |RAM_Line        |     1|
+|3     |RAM_Line__3     |     1|
+|4     |RAM_Line__4     |     1|
+|5     |clk_wiz_0       |     1|
+|6     |clk_wiz_1       |     1|
+|7     |csi2_d_phy_rx_0 |     1|
+|8     |csi_to_axis_0   |     1|
+|9     |rgb2dvi_0       |     1|
+|10    |BUFG            |     1|
+|11    |CARRY4          |   111|
+|12    |DSP48E1         |     4|
+|13    |LUT1            |    49|
+|14    |LUT2            |   287|
+|15    |LUT3            |   153|
+|16    |LUT4            |   152|
+|17    |LUT5            |   232|
+|18    |LUT6            |   352|
+|19    |MUXF7           |    21|
+|20    |RAM128X1D       |    15|
+|21    |RAM16X1D        |     7|
+|22    |RAM16X1S        |     2|
+|23    |RAM32M          |     4|
+|24    |RAM64X1D        |     1|
+|25    |SRL16E          |    14|
+|26    |FDCE            |   376|
+|27    |FDPE            |    13|
+|28    |FDRE            |   367|
+|29    |FDSE            |    12|
+|30    |LD              |    23|
+|31    |LDC             |    11|
+|32    |IBUF            |     3|
+|33    |IOBUF           |     1|
+|34    |OBUF            |     2|
+|35    |OBUFT           |     1|
++------+----------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------+------+
+|      |Instance                  |Module                |Cells |
++------+--------------------------+----------------------+------+
+|1     |top                       |                      |  2328|
+|2     |  MIPI_Camera_Driver      |OV5647_Init           |   213|
+|3     |    OV5647                |ROM_OV5647            |    71|
+|4     |    Trigger_Write         |Trigger_Generator     |    18|
+|5     |  MIPI_Camera_IIC         |Driver_IIC            |   133|
+|6     |  MIPI_Trans_Driver       |Driver_MIPI           |   666|
+|7     |    Driver_Bayer_To_RGB0  |Driver_Bayer_To_RGB   |   422|
+|8     |    Driver_Csi_To_Dvp0    |Driver_Csi_To_Dvp     |   172|
+|9     |  u_lcd                   |lcd                   |   379|
+|10    |    u_clk_div             |clk_div               |     2|
+|11    |    u_lcd_driver          |lcd_driver            |   377|
+|12    |  u_vip                   |vip                   |   908|
+|13    |    u_binarization        |binarization          |    10|
+|14    |    u_digital_recognition |digital_recognition   |   412|
+|15    |    u_projection          |projection            |   375|
+|16    |      u_h_myram           |myram                 |    53|
+|17    |      u_v_myram           |myram__parameterized0 |    44|
+|18    |    u_rgb2ycbcr           |rgb2ycbcr             |   111|
++------+--------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 48 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 881.246 ; gain = 248.340
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 881.246 ; gain = 561.059
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 881.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 23 instances
+  LDC => LDCE: 11 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 15 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 7 instances
+  RAM16X1S => RAM32X1S (RAMS32): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 133 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:20 . Memory (MB): peak = 881.246 ; gain = 573.613
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 881.246 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/apple/Desktop/test/Camera_Demo.runs/synth_1/Camera_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Camera_Demo_utilization_synth.rpt -pb Camera_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 15:54:47 2020...
