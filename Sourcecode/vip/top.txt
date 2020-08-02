@@ -1,0 +1,25 @@
+//图像处理模块
+vip #(
+    .NUM_ROW(NUM_ROW),            //识别几行数字，默认为1
+    .NUM_COL(NUM_COL),           //识别几个数字，默认为3
+    .H_PIXEL(H_PIXEL),           //显示屏高度
+    .V_PIXEL(V_PIXEL)            //显示屏宽度
+)u_vip(
+    //module clock
+    .clk              (clk_100MHz_out),  // 时钟信号
+ //   .rst_n            (rst_n    ),  // 复位信号（低有效）
+    //图像处理前的数据接口
+    .pre_frame_vsync  (vs_t   ),       //行同步（来自lcd）
+    .pre_frame_hsync  (hs_t   ),        //场同步（来自lcd）
+    .pre_frame_de     (de_t   ),            //使能（来自lcd）
+    .pre_rgb          (color_rgb),          //输入rgb565信号
+    .xpos             (xpos   ),            //x坐标（来自lcd）
+    .ypos             (ypos   ),             //y坐标（来自lcd）
+    //图像处理后的数据接口 
+    .post_frame_vsync (lcd_vs ),  //输出场同步信号         ***（作为输出信号一部分，未连接）
+    .post_frame_hsync (lcd_hs ),  // 输出行同步信号           ***（作为输出信号一部分，未连接）
+    .post_frame_de    (lcd_de ),  // 输出数据输入使能            ***（未连接）
+    .post_rgb         (lcd_rgb),  // 输出RGB565颜色数据( 识别区域的边框,已更改为24位RGB888）        ***（输出到HDMI作为识别区域的边框，未连接）
+    //user interface
+    .digit            (digit  )   // 识别到的数字          ***（输出，原本是输出到数码管，也许可以试试接到HDMI，未连接）
+);

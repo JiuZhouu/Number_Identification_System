@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596181984">
   <File Type="PA-TCL" Name="Camera_Demo.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Camera_Demo_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Camera_Demo_reports.tcl"/>
   <File Type="RDS-RDS" Name="Camera_Demo.vds"/>
   <File Type="RDS-UTIL" Name="Camera_Demo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Camera_Demo_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Camera_Demo.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Camera_Demo_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Camera_Demo_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Driver_Bayer_To_RGB.v">
@@ -53,70 +50,70 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/binarization.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/binarization.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/lcd/clk_div.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/clk_div.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/digital_recognition.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/digital_recognition.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/lcd/lcd.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/lcd.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/lcd/lcd_driver.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/lcd_driver.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/myram.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/myram.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/projection.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/projection.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/lcd/rd_id.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/rd_id.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/rgb2ycbcr.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/rgb2ycbcr.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../numberrecognition_changes/vip/vip.v">
+    <File Path="$PPRDIR/../../../numberrecognition_changes/vip/vip.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -169,7 +166,7 @@
   <BlockFileSet Type="BlockSrcs" Name="csi2_d_phy_rx_0"/>
   <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_0"/>
   <BlockFileSet Type="BlockSrcs" Name="AXIS_Data_RAM"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
   <BlockFileSet Type="BlockSrcs" Name="RAM_Line"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

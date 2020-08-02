@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/apple/Desktop/test/Camera_Demo.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/apple/Desktop/digital_recognition/Number_Identification_System/Sourcecode/Camera_Demo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="231b9d1d2f9e45ea9516f3e116887559"/>
@@ -102,70 +102,70 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/binarization.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/binarization.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/lcd/clk_div.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/clk_div.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/digital_recognition.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/digital_recognition.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/lcd/lcd.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/lcd.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/lcd/lcd_driver.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/lcd_driver.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/myram.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/myram.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/projection.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/projection.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/lcd/rd_id.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/lcd/rd_id.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/rgb2ycbcr.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/rgb2ycbcr.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../numberrecognition_changes/vip/vip.v">
+      <File Path="$PPRDIR/../../../numberrecognition_changes/vip/vip.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

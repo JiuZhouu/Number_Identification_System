@@ -1,0 +1,23 @@
+    //例化LCD顶层模块
+lcd u_lcd(
+    .clk        (clk_100m_lcd),      //100m时钟
+//    .rst_n      (rst_n),
+
+    .lcd_hs     (hs_t ),      //场同步（输出至vip（图像处理模块））
+    .lcd_vs     (vs_t ),     //行同步（输出至vip）
+    .lcd_de     (de_t ),      // 使能（输出至vip）
+    .lcd_rgb    (color_rgb),    //原本为输出到图像处理模块和显示模块的rgb565信号，现已改为24位RGB888格式      ***（这里连接到HDMI作为输出视频信号）
+    .lcd_bl     (),         //LCD背光 （没用）
+    .lcd_rst    (),         //LCD重置 （没用）
+    .lcd_pclk   (),         //LCD采样时钟（没用）
+
+    .clk_lcd    (clk_lcd),        //lcd内时钟
+
+    .pixel_data (rd_data),       //原本为来自fifo的视频图像数据，RGB565格式（现已改为24位RGB888）   ***（这里连接之前的模块传来的视频信号）
+    .rd_en      (rd_en  ),       //原本为回传到fifo的使能，即完成lcd每处理完一部分信息就会向之前的模块请求继续读取信息      ***（未连接，可根据需要决定是否连接）
+
+    .ID_lcd     (ID_LCD),      //LCD型号   ***（决定输出信号分辨率，可改变）  
+    //
+    .pixel_xpos (xpos  ),      //x坐标（输出至vip）
+    .pixel_ypos (ypos  )           //y坐标（输出至vip）
+);
