@@ -18,4 +18,6 @@
    2. images：图片 
    3. sourcecode：源码 
    4. ExecutableFiles：bit文件 
+   5. Problems and Solutions.md：介绍了一些调试过程中的问题和解决方案
+   6. Digital_Recognition：数字识别算法实现的介绍
 ## 作品照片(附在Images文件夹里面）
